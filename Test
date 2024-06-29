@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "52ffb65f-7faf-40e1-8786-2cdcd634ba1c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28975042",
+		"_collection_link": "https://orange-robot-454127.postman.co/workspace/Team-Workspace~7434d145-ddee-4d69-82b2-5383e14c3bcf/collection/28975042-52ffb65f-7faf-40e1-8786-2cdcd634ba1c?action=share&source=collection_link&creator=28975042"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Course",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Wyzer",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Course",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "Wyzer",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"expense"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
