@@ -2,7 +2,7 @@ const pool = require("../../config/db");
 
 const queries = require("./queries");
 
-const getExpense = (req, res) => {
+const getBooks = (req, res) => {
   pool
     .query(queries.getData)
     .then((result) => {
@@ -14,7 +14,7 @@ const getExpense = (req, res) => {
     });
 };
 
-const addExpense = (req, res) => {
+const addBook = (req, res) => {
   const { title, author, amount, category } = req.body;
 
   pool
@@ -33,7 +33,7 @@ const addExpense = (req, res) => {
     });
 };
 
-const updateExpense = (req, res) => {
+const updateBook = (req, res) => {
   const { title, author, amount, category, id } = req.body;
 
   // Validate amount
@@ -51,7 +51,7 @@ const updateExpense = (req, res) => {
       });
     })
     .catch((error) => {
-      console.error("Error updating expense:", error);
+      console.error("Error updating book:", error);
       return res.status(500).json({
         error: "Internal server error",
         message: "Failed to update data",
@@ -59,7 +59,7 @@ const updateExpense = (req, res) => {
     });
 };
 
-const deleteExpense = (req, res) => {
+const deleteBook = (req, res) => {
   const { id } = req.params;
 
   pool
@@ -67,20 +67,20 @@ const deleteExpense = (req, res) => {
     .then((result) => {
       if (result.rowCount === 0) {
         return res.status(404).json({
-          error: "Expense not found",
+          error: "Book not found",
         });
       }
       return res.status(200).json({
-        message: "Successfully deleted expense",
+        message: "Successfully deleted book",
       });
     })
     .catch((error) => {
-      console.error("Error deleting expense:", error);
+      console.error("Error deleting book:", error);
       return res.status(500).json({
         error: "Internal server error",
-        message: "Failed to delete expense",
+        message: "Failed to delete book",
       });
     });
 };
 
-module.exports = { getExpense, addExpense, updateExpense, deleteExpense };
+module.exports = { getBooks, addBook, updateBook, deleteBook };
