@@ -59,4 +59,28 @@ const updateExpense = (req, res) => {
     });
 };
 
-module.exports = { getExpense, addExpense, updateExpense };
+const deleteExpense = (req, res) => {
+  const { id } = req.params;
+
+  pool
+    .query(queries.deleteData, [id])
+    .then((result) => {
+      if (result.rowCount === 0) {
+        return res.status(404).json({
+          error: "Expense not found",
+        });
+      }
+      return res.status(200).json({
+        message: "Successfully deleted expense",
+      });
+    })
+    .catch((error) => {
+      console.error("Error deleting expense:", error);
+      return res.status(500).json({
+        error: "Internal server error",
+        message: "Failed to delete expense",
+      });
+    });
+};
+
+module.exports = { getExpense, addExpense, updateExpense, deleteExpense };
