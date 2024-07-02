@@ -33,7 +33,7 @@ export default {
     data() {
         return {
             clipped: true,
-            drawer: false,
+            drawer: true,
             fixed: false,
             items: [
                 {
@@ -48,12 +48,12 @@ export default {
                 },
                 {
                     icon: "mdi-wallet",
-                    title: "Expense",
+                    title: "Library",
                     to: "/Expense",
                 },
             ],
             miniVariant: false,
-            title: "My Expense",
+            title: "Library",
         };
     },
 };

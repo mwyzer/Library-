@@ -1,10 +1,24 @@
 [
   {
+    "name": "books",
+    "path": "/books",
+    "component": "C:\\\\library\\\\frontend\\\\pages\\\\books.vue",
+    "chunkName": "pages/books",
+    "_name": "_535151c4"
+  },
+  {
     "name": "inspire",
     "path": "/inspire",
     "component": "C:\\\\library\\\\frontend\\\\pages\\\\inspire.vue",
     "chunkName": "pages/inspire",
     "_name": "_7648c84e"
+  },
+  {
+    "name": "students",
+    "path": "/students",
+    "component": "C:\\\\library\\\\frontend\\\\pages\\\\students.vue",
+    "chunkName": "pages/students",
+    "_name": "_86bd7058"
   },
   {
     "name": "index",
