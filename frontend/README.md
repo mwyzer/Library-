@@ -9,6 +9,7 @@ Install backend with npm
 ```bash
   cd api
   npm install
+  npm run dev
 ```
 
 Install frontend with npm
@@ -16,6 +17,7 @@ Install frontend with npm
 ```bash
   cd frontend
   npm install
+  npm run dev
 ```
 
 ## Demo
