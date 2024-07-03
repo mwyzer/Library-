@@ -2,7 +2,7 @@
     <div>
         <header>Header</header>
         <div>
-            <Nuxt />
+            <students />
         </div>
     </div>
 </template>
@@ -12,3 +12,4 @@ export default {};
 </script>
 
 <style></style>
+

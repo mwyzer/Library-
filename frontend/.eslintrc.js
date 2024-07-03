@@ -4,13 +4,16 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ["eslint:recommended", "plugin:vue/recommended"],
-  parserOptions: {
-    parser: "babel-eslint",
-  },
+  extends: [
+    "eslint:recommended",
+    "plugin:vue/essential",
+    "@nuxtjs",
+    "plugin:nuxt/recommended",
+  ],
+  plugins: [],
+  // Add your custom rules here
   rules: {
-    semi: ["error", "always"],
-    quotes: ["error", "double"],
-    },
-  ignorePatterns: [".nuxt/*", "node_modules/*"]
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+  },
 };

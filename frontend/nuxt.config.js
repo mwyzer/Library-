@@ -3,8 +3,8 @@ import colors from "vuetify/es5/util/colors";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - frontend",
-    title: "frontend",
+    titleTemplate: "%s - App",
+    title: "Library",
     htmlAttrs: {
       lang: "en",
     },
@@ -36,7 +36,6 @@ export default {
   eslint: {
     // Module options
     fix: true,
-    extensions: ["js", "vue"],
     exclude: ["node_modules", ".nuxt"],
   },
 

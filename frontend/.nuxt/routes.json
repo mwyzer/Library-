@@ -2,9 +2,9 @@
   {
     "name": "books",
     "path": "/books",
-    "component": "C:\\\\library\\\\frontend\\\\pages\\\\books.vue",
-    "chunkName": "pages/books",
-    "_name": "_535151c4"
+    "component": "C:\\\\library\\\\frontend\\\\pages\\\\books\\\\index.vue",
+    "chunkName": "pages/books/index",
+    "_name": "_5ebe5fa4"
   },
   {
     "name": "inspire",
@@ -18,6 +18,22 @@
     "path": "/students",
     "component": "C:\\\\library\\\\frontend\\\\pages\\\\students.vue",
     "chunkName": "pages/students",
+    "children": [
+      {
+        "name": "students-Students",
+        "path": "Students",
+        "component": "C:\\\\library\\\\frontend\\\\pages\\\\students\\\\Students.vue",
+        "chunkName": "pages/students/Students",
+        "_name": "_0620460c"
+      },
+      {
+        "name": "students-id",
+        "path": ":id?",
+        "component": "C:\\\\library\\\\frontend\\\\pages\\\\students\\\\_id.vue",
+        "chunkName": "pages/students/_id",
+        "_name": "_29e60c16"
+      }
+    ],
     "_name": "_86bd7058"
   },
   {
